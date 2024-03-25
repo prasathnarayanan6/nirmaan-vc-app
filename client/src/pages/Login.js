@@ -8,7 +8,7 @@ function Login() {
                 <div className="w-full flex items-center justify-center lg:w-1/2">
                     <div className="bg-white px-10 py-20 rounded-xl border-2 border-blue-200">
                     <h1 className="text-4xl font-semibold text-gray-600">LOG IN</h1>
-                            <div className="mt-7">
+                            <div className="mt-8">
                                 <div>
                                     <label className="text-lg font-medium text-blue-600">Email<span className="text-red-500">*</span></label>
                                     <input 
