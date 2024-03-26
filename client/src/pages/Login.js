@@ -38,7 +38,7 @@ function Login() {
                 </div>
                 <div className="hidden relative lg:flex flex-col items-center w-1/2 justify-center h-full bg-blue-300">
                         <img src={image} alt={image} className="mb-4" width="30%"/>
-                        <div className="text-3xl font-bold mb-4">STARTUP MANAGEMENT PORTAL</div>
+                        <div className="text-4xl font-bold mb-4">TRA<span className="text-green-700">KTOR</span></div>
                         <div className="w-full flex justify-center font-semibold">Developed by IT Team, OIE - IIT Madras</div>
                 </div>
             </div>
