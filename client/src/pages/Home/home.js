@@ -1,8 +1,9 @@
 import React from "react";
+import SideBar from "../../components/sidebar";
 function Home() {
     return (
             <div>
-                Hello
+                <SideBar />
             </div>
     );
 }
