@@ -1,16 +1,17 @@
 import React from 'react'
-import { FaBook, FaCalendar, FaChalkboardTeacher, FaCreditCard, FaDatabase, FaFilePdf, FaGraduationCap, FaHandSparkles, FaHome, FaInfo, FaLock, FaPaw, FaPeopleArrows, FaPhone,FaSchool, FaSms, FaSuitcase, FaTrafficLight, FaTrophy, FaTv } from 'react-icons/fa';
+import { FaArrowAltCircleRight, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduationCap, FaHome, FaPeopleArrows} from 'react-icons/fa';
 
 function SideBar() {
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-800 text-dark shadow-lg">
-        <SideBarIcon icon={<FaHome size="17" text="Phone"/>} />
-        <SideBarIcon icon={<FaGraduationCap size="17" />} />
-        <SideBarIcon icon={<FaChalkboardTeacher size="17" />} />
-        <SideBarIcon icon={<FaBook size="17" />} />
-        <SideBarIcon icon={<FaCalendar size="17" />} />
-        <SideBarIcon icon={<FaPeopleArrows size="17" />} />
-        <SideBarIcon icon={<FaFilePdf size="17" />} />
+        <SideBarIcon icon={<FaArrowAltCircleRight size="17" className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" text="Phone"/>} />
+        <SideBarIcon icon={<FaHome size="17" className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" text="Phone"/>} />
+        <SideBarIcon icon={<FaGraduationCap className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
+        <SideBarIcon icon={<FaChalkboardTeacher className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
+        <SideBarIcon icon={<FaBook className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
+        <SideBarIcon icon={<FaCalendar className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
+        <SideBarIcon icon={<FaPeopleArrows className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
+        <SideBarIcon icon={<FaFilePdf className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
     </div>
   );
 };

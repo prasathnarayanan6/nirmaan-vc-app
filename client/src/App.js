@@ -5,9 +5,8 @@ import SideBar from './components/sidebar';
 function App() {
   return (
     <div className="App">
-          {/* <SideBar/> */}
-        <Home/>
         {/* <Login /> */}
+        <Home />
     </div>
   );
 }
