@@ -1,10 +1,10 @@
 import React from 'react'
-import { FaArrowAltCircleRight, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduationCap, FaHome, FaPeopleArrows} from 'react-icons/fa';
+import { FaArrowAltCircleRight, FaBell, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduationCap, FaHome, FaPeopleArrows} from 'react-icons/fa';
 
 function SideBar() {
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-800 text-dark shadow-lg">
-        <SideBarIcon icon={<FaArrowAltCircleRight size="17" className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" text="Phone"/>} />
+        <SideBarIcon icon={<FaBell size="17" className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" text="Phone"/>} />
         <SideBarIcon icon={<FaHome size="17" className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" text="Phone"/>} />
         <SideBarIcon icon={<FaGraduationCap className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
         <SideBarIcon icon={<FaChalkboardTeacher className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" size="17" />} />
