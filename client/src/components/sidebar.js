@@ -1,7 +1,8 @@
 import React from 'react'
-import { FaArrowAltCircleRight, FaBars, FaBell, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduationCap, FaHome, FaPeopleArrows} from 'react-icons/fa';
+import { FaBars, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduationCap, FaHome, FaPeopleArrows} from 'react-icons/fa';
 
 function SideBar() {
+ 
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-800 text-dark shadow-lg">
         <SideBarIcon icon={<FaBars size="14" className="active:scale-[.100] active:duration-75 hover:scale-[1.02] ease-in-out transition-all" text="Phone"/>} />

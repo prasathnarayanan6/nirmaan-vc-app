@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import img from '../assets/images/nirmaan-iitm.14fdf833.svg'
 import { FaAppStore, FaDashcube, FaDatabase, FaFacebookMessenger, FaPaperPlane, FaRegBell, FaUserCircle } from 'react-icons/fa';
 import profile from '../assets/images/svg.png'
 function NavBar() {
+  const [isBellHovered, setIsBellHovered] = useState(false);
+  const styles = {
+
+      transform: isBellHovered?"rotate(20deg)" : "",
+  }
+  const handleBellHover = () => {
+    setIsBellHovered(!isBellHovered);
+  };
   return (
     <div className="navbar">
           <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900 shadow-lg">
@@ -20,13 +28,13 @@ function NavBar() {
               <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                     <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-2xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaRegBell /></a>
+                     <a href="/" style={styles} className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" onMouseEnter={handleBellHover} onMouseLeave={handleBellHover} ><FaRegBell /></a>
                   </li>
                   <li>
-                     <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-2xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>
+                     <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>
                   </li>
                   <li>
-                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-2xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" ><FaUserCircle /></a>
+                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" ><FaUserCircle /></a>
                   </li>
                 </ul>
               </div>
