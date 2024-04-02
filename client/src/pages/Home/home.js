@@ -40,7 +40,7 @@ function Home() {
                                             <FaGraduationCap  size="48" className="text-slate-400 hover:text-green-400"/>
                                         </div>
                                         <div className="mx-4">
-                                            <h4 className="text-2xl font-bold text-white">3453</h4>
+                                            <h4 className="text-2xl font-bold text-white">Na</h4>
                                             <div className="text-slate-400 font-semibold">Graduated</div>
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@ function Home() {
                                             <FaBookOpen  size="48" className="text-slate-400 hover:text-green-400"/>
                                         </div>
                                         <div className="mx-4">
-                                            <h4 class="text-2xl font-bold text-white">3453</h4>
+                                            <h4 class="text-2xl font-bold text-white">Na</h4>
                                             <div class="text-slate-400">Dropped Out</div>
                                         </div>
                                     </div>
