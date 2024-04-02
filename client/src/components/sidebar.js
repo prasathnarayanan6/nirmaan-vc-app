@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { FaBars, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduationCap, FaHome, FaPeopleArrows} from 'react-icons/fa';
 
 function SideBar() {
@@ -18,8 +18,6 @@ function SideBar() {
 };
 
 const SideBarIcon = ({icon, text="tooltipdsds"}) => {
-  const [tooltip, setToolip] = useState(false);
-
     return(
         <div className="relative flex items-center justify-center h-10 w-10 mt-4 mb-1 mx-auto shadow-lg bg-gray-900 text-green-500 hover:bg-green-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer group;">
                 {icon}

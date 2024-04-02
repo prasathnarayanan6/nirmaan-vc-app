@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "@fontsource/open-sans";
 import '@fontsource/josefin-sans';
 import image from '../assets/images/nirmaan-iitm.14fdf833.svg';
 function Login() {
+    const [formdata, setformdata] = useState("");
+    
     return(
             <div className="flex w-full h-screen">
                 <div className="w-full flex items-center justify-center lg:w-1/2">

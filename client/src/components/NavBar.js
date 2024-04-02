@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import img from '../assets/images/nirmaan-iitm.14fdf833.svg'
-import {FaBarcode, FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
+import {FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
 function NavBar() {
   const [isBellHovered, setIsBellHovered] = useState(false);
   const styles = {
