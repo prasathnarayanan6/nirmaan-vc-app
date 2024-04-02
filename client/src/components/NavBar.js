@@ -3,8 +3,14 @@ import img from '../assets/images/nirmaan-iitm.14fdf833.svg'
 import {FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
 function NavBar() {
   const [isBellHovered, setIsBellHovered] = useState(false);
+  const [profileHover, setProfileHover] = useState(false);
+  const handleMouseEnter = () => {
+    setProfileHover(true);
+  }
+  const handleMouseLeave = () => {
+    setProfileHover(false);
+  }
   const styles = {
-
       transform: isBellHovered?"rotate(20deg)" : "",
   }
   const handleBellHover = () => {
@@ -36,7 +42,13 @@ function NavBar() {
                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>
                   </li>
                   <li>
-                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" ><FaUserCircle /></a>
+                      <a href="/" className="inline-block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><FaUserCircle />{profileHover && (
+                          <div className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100">Profile</a>
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100">Settings</a>
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100">Sign out</a>
+                          </div>
+                      )}</a>
                   </li>
                 </ul>
               </div>

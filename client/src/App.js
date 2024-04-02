@@ -1,15 +1,12 @@
-// import './App.css';
-// import Login from './pages/Login'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home/home';
-// import SideBar from './components/sidebar';
+import Login from './pages/Login';
 function App() {
   return (
-    <div className="App">
+    <div>
         <Home />
         {/* <Login /> */}
-
     </div>
   );
 }
-
 export default App;
