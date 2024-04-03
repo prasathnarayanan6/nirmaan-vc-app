@@ -46,8 +46,8 @@ function NavBar() {
                       <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><FaUserCircle />
                       {profileHover && (
                           <div className="absolute top-[33px;] right-0 mt-2 w-30 bg-slate-100 border border-gray-200 rounded-lg shadow-md items-center">
-                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-200 text-sm"><FaGear /></a>
-                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-200 text-sm"><FaSignOutAlt /></a>
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-400 text-sm hover:text-green-700"><FaGear /></a>
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-400 text-sm hover:text-green-700"><FaSignOutAlt /></a>
                           </div>
                       )}</a>
                   </li>
