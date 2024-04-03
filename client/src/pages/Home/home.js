@@ -11,7 +11,7 @@ function Home() {
                 <section id="" className=" flex-grow">
                 <NavBar /> 
                     <div className="items-center px-4 py-3 m-auto mt-2 sm:mt-10 md:mt-10">
-                            <div className="md:flex md:flex-wrap lg:flex lg:flex-wrap max-w-screen-2xl">
+                            <div className="md:flex md:flex-wrap lg:flex lg:flex-wrap max-w-screen-3xl">
                                 <div className="w-full mt-6 px-6 sm:w-1/2 xl:w-1/4 sm:mt-0">
                                     <div className="flex items-center px-5 py-6 shadow-xl rounded-md bg-gray-800 border border-blue-300">
                                             <div class="p-3 rounded-full bg-gray-900 bg-opacity-75">

@@ -1,9 +1,20 @@
 import React from 'react'
+import SideBar from '../../components/sidebar';
+import NavBar from '../../components/NavBar';
 
-function connection() {
+function Connections() {
   return (
-    <div>connection</div>
+    <div className="flex">
+        <section id='sidebar' className="w-[65px;]">
+                <SideBar />
+        </section>
+        <section className="flex-grow">
+            <NavBar />
+            Dashboard
+        </section>
+
+    </div>
   )
 }
 
-export default connection
+export default Connections;
