@@ -22,7 +22,7 @@ function NavBar() {
             <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-2">
               <a href="https://github.com/prasathnarayanan6/nirmaan-vc-app" className="flex items-center space-x-3 rtl:space-x-reverse">
                   <img src={img} className="h-10" alt="Flowbite Logo" />
-                  <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white text-green-500 hover:text-green-500 transition-all eas-in-out active:scale-[.100] active:duration-75"><i>trak<span className="text-black">tor</span></i></span>
+                  <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white text-green-500 hover:text-green-500 transition-all eas-in-out active:scale-[.100] active:duration-75"><i>TraK<span className="text-black">tor</span></i></span>
               </a>
               <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                   <span className="sr-only">Open main menu</span>
@@ -42,11 +42,12 @@ function NavBar() {
                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>
                   </li>
                   <li>
-                      <a href="/" className="inline-block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><FaUserCircle />{profileHover && (
-                          <div className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100">Profile</a>
-                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100">Settings</a>
-                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100">Sign out</a>
+                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><FaUserCircle />
+                      {profileHover && (
+                          <div className="absolute top-[33px;] right-0 mt-2 w-30 bg-slate-100 border border-gray-200 rounded-lg shadow-md items-center">
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-200 text-sm">Profile</a>
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-200 text-sm">Settings</a>
+                              <a href="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-200 text-sm">Sign out</a>
                           </div>
                       )}</a>
                   </li>

@@ -52,7 +52,7 @@ function Home() {
                                         </div>
                                         <div className="mx-4">
                                             <h4 className="text-2xl font-bold text-white">Na</h4>
-                                            <div className="text-slate-400">Dropped Out</div>
+                                            <div className="text-slate-400 font-semibold">Dropped Out</div>
                                         </div>
                                     </div>
                                 </div>
