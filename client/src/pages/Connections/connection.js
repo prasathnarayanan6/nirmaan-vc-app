@@ -10,7 +10,9 @@ function Connections() {
         </section>
         <section className="flex-grow">
             <NavBar />
-            Dashboard
+            <div>
+                
+            </div>
         </section>
 
     </div>
