@@ -15,7 +15,7 @@ function Home() {
                                 <div className="w-full mt-6 px-6 sm:w-1/2 xl:w-1/4 sm:mt-0">
                                     <div className="flex items-center px-5 py-6 shadow-xl rounded-md bg-gray-800 border border-blue-300">
                                             <div class="p-3 rounded-full bg-gray-900 bg-opacity-75">
-                                                <FaRegBuilding  size="48" className="text-slate-400 hover:text-green-400"/>
+                                                <FaRegBuilding  size="35" className="text-slate-400 hover:text-green-400"/>
                                             </div>
                                         <div className="mx-4">
                                             <h4 className="text-2xl font-bold text-white">159</h4>
@@ -26,10 +26,10 @@ function Home() {
                                 <div className="w-full mt-6 px-6 sm:w-1/2 xl:w-1/4 sm:mt-0">
                                     <div className="flex items-center px-5 py-6 shadow-lg rounded-md bg-gray-800">
                                         <div className="p-3 rounded-full bg-gray-900 bg-opacity-75">
-                                            <FaBookOpen  size="48" className="text-slate-400 hover:text-green-400"/>
+                                            <FaBookOpen  size="35" className="text-slate-400 hover:text-green-400"/>
                                         </div>
                                         <div className="mx-4">
-                                            <h4 className="text-2xl font-bold text-white">NA</h4>
+                                            <h4 className="text-2xl font-bold text-white">23</h4>
                                             <div className="text-slate-400 font-semibold">Active Startups</div>
                                         </div>
                                     </div>
@@ -37,10 +37,10 @@ function Home() {
                                 <div className="w-full mt-6 px-6 sm:w-1/2 xl:w-1/4 sm:mt-0">
                                     <div className="flex items-center px-5 py-6 shadow-lg rounded-md bg-gray-800">
                                         <div className="p-3 rounded-full bg-gray-900 bg-opacity-75">
-                                            <FaGraduationCap  size="48" className="text-slate-400 hover:text-green-400"/>
+                                            <FaGraduationCap  size="35" className="text-slate-400 hover:text-green-400"/>
                                         </div>
                                         <div className="mx-4">
-                                            <h4 className="text-2xl font-bold text-white">Na</h4>
+                                            <h4 className="text-2xl font-bold text-white">24</h4>
                                             <div className="text-slate-400 font-semibold">Graduated</div>
                                         </div>
                                     </div>
@@ -48,10 +48,10 @@ function Home() {
                                 <div className="w-full mt-6 px-6 sm:w-1/2 xl:w-1/4 sm:mt-0">
                                     <div className="flex items-center px-5 py-6 shadow-lg rounded-md bg-gray-800">
                                         <div className="p-3 rounded-full bg-gray-900 bg-opacity-75">
-                                            <FaBookOpen  size="48" className="text-slate-400 hover:text-green-400"/>
+                                            <FaBookOpen  size="35" className="text-slate-400 hover:text-green-400"/>
                                         </div>
                                         <div className="mx-4">
-                                            <h4 className="text-2xl font-bold text-white">Na</h4>
+                                            <h4 className="text-2xl font-bold text-white">10</h4>
                                             <div className="text-slate-400 font-semibold">Dropped Out</div>
                                         </div>
                                     </div>
