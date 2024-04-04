@@ -15,7 +15,7 @@ function SideBar() {
       <SideBarLink href="/connections">
         <SideBarIcon icon={<FaPeopleArrows size="16" />} tooltipText="Connections" />
       </SideBarLink>
-      <SideBarIcon icon={<FaFilePdf size="16" />} tooltipText="PDF" />
+      <SideBarIcon icon={<FaFilePdf size="16" />} tooltipText="Reports" />
     </div>
   );
 }
