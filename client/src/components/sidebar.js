@@ -47,7 +47,7 @@ const SideBarIcon = ({ icon, tooltipText }) => {
     >
       {icon}
       {hoverTooltip && (
-        <span className="absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-100">
+        <span className="absolute w-auto p-2 m-2 min-w-max left-14 rounded-sm shadow-md text-slate-800 bg-white text-xs font-bold transition duration-1000 scale-100">
             {tooltipText}
         </span>
       )}

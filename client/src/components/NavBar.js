@@ -4,6 +4,7 @@ import {FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
 function NavBar() {
   const [isBellHovered, setIsBellHovered] = useState(false);
   const [profileHover, setProfileHover] = useState(false);
+  const [rocketHover, setRocketHover] = useState(false);
   const handleMouseEnter = () => {
     setProfileHover(true);
   }
@@ -18,6 +19,17 @@ function NavBar() {
   const handleBellHover = () => {
     setIsBellHovered(!isBellHovered);
   };
+
+  const rocketHandleHover = () => {
+    setRocketHover(true);
+  }
+  const rocketHandleLeave = () => {
+    setRocketHover(false);
+  }
+  const styless = {
+    transform: rocketHover?"rotate(-20deg)":"",
+    transition: rocketHover?"ease-in-out":"",
+  }
   return (
     <div className="navbar">
           <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900 shadow-lg">
@@ -44,7 +56,7 @@ function NavBar() {
                      <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;"><FaQrcode /></a>
                   </li>
                   <li>
-                     <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>
+                     <a href="/" style={styless} onMouseEnter={rocketHandleHover} onMouseLeave={rocketHandleLeave} className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>
                   </li>
                   <li>
                       <div className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-green-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer group;" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><FaUserCircle />
