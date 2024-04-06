@@ -29,7 +29,8 @@ function Connections() {
                                                       </div>
                                                 </div>
                                                 <div className="m-7">
-                                                      <table className="w-full">
+                                                  <div className="overflow-auto rounded-lg shadow hidden md:block">
+                                                  <table className="w-full">
                                                           <thead className="bg-gray-25 border-b-2 border-gray-100">
                                                                   <tr>
                                                                       <th className="p-3 text-green-500 font-semibold tracking-wide text-left">STARTUP/ MENTOR</th>
@@ -39,61 +40,71 @@ function Connections() {
                                                                       <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONTACT</th>
                                                                   </tr>
                                                           </thead>
-                                                          <tbody>
+                                                          <tbody className="divide-y divide-gray-100">
                                                               <tr className="bg-white">
-                                                                  <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"  className="font-bold text-value-500 hover:underline"> 100</a>
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                                                      <a href="/"  className="font-bold text-value-500 hover:underline">Prof. Prabhu Rajagopal</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"> 100</a>
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                                                      <a href="/">+12344566</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                         <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"> 100</a>
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                                                      <a href="/">Strategic Advisor</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"> 100</a>
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                                                      <a href="/">+1234567</a>
                                                                   </td>
                                                               </tr>
                                                               <tr className="hover:bg-gray-200">
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                         <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-gray-300 rounded-lg bg-opacity-60">PLENOME</span>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
                                                               </tr>
                                                               <tr className="bg-white">
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
-                                                                  </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  </td> 
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                         <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-300 rounded-lg bg-opacity-60">PLENOME</span>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
-                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
                                                                       <a href="/"> 100</a>
                                                                   </td>
                                                               </tr>
                                                           </tbody>
 
                                                       </table>
+                                                      </div>
+                                                      <div className=".grid grid-cols-1 gap-4 md:hidden">
+                                                          <div className="bg-white p-4 rounded-lg shadow"> 
+                                                              <div className="flex items-center space-x-2 test-sm">
+                                                                  <div>
+                                                                      <a href="/.." className="text">soj</a>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
                                                 </div>
                                           </div>
                                     </div>
