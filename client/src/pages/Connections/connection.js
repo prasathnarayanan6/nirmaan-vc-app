@@ -21,15 +21,79 @@ function Connections() {
                                     <div className="rounded-sm shadow-md border border-blue-200 rounded-xl col-span-full">
                                           <div className="p-3 flex flex-col">
                                                 <div className="rounded-sm ">
-                                                      <div className="fles flex-row">
+                                                      <div className="flex-row">
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-green-500 transition-all ease-in-out md:text-sm font-semibold p-2 text-white"><span><IoMdPersonAdd /></span></button>
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-blue-300 rounded-md bg-purple-600 transition-all ease-in-out md:text-sm font-semibold p-2 text-white ms-4"><span><FaUserTag /></span></button>
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-blue-300 rounded-md bg-yellow-500 transition-all ease-in-out md:text-sm font-semibold p-2 text-white ms-4"><GrConnect /></button>
-                                                            <input type="text" className="border border-blue-300 rounded-md bg-white-500 ms-4 md:h-[34px] w-[70%;]" placeholder="Search Tagged connections"></input>
+                                                            <input type="text" className="border border-blue-300 rounded-md bg-white-500 ms-4 md:h-[34px;] sm:w-[80%]" placeholder="Search Tagged connections"></input>
                                                       </div>
                                                 </div>
                                                 <div className="m-7">
+                                                      <table className="w-full">
+                                                          <thead className="bg-gray-25 border-b-2 border-gray-100">
+                                                                  <tr>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">STARTUP/ MENTOR</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONTACT</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">ORGANIZATION</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONNECT FOR</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONTACT</th>
+                                                                  </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                              <tr className="bg-white">
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"  className="font-bold text-value-500 hover:underline"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr className="hover:bg-gray-200">
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr className="bg-white">
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700">
+                                                                      <a href="/"> 100</a>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody>
 
+                                                      </table>
                                                 </div>
                                           </div>
                                     </div>
