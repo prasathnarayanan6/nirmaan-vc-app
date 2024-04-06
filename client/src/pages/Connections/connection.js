@@ -48,7 +48,7 @@ function Connections() {
                                                                       <a href="/"> 100</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"> 100</a>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700">
                                                                       <a href="/"> 100</a>
@@ -65,7 +65,7 @@ function Connections() {
                                                                       <a href="/"> 100</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"> 100</a>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-gray-300 rounded-lg bg-opacity-60">PLENOME</span>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700">
                                                                       <a href="/"> 100</a>
@@ -82,7 +82,7 @@ function Connections() {
                                                                       <a href="/"> 100</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700">
-                                                                      <a href="/"> 100</a>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-300 rounded-lg bg-opacity-60">PLENOME</span>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700">
                                                                       <a href="/"> 100</a>
