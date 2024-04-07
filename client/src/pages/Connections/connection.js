@@ -97,18 +97,22 @@ function Connections() {
                                                       </table>
                                                       </div>
                                                       <div className=".grid grid-cols-1 gap-4 md:hidden">
-                                                          <div className="bg-white p-4 rounded-lg shadow"> 
+                                                          <div className="bg-white space-y-4 p-4 rounded-lg shadow"> 
                                                               <div className="flex items-center space-x-2 test-sm">
                                                                   <div>
                                                                       <a href="/.." className="text-blue font-bold-500 hover:underline">Prabhu RajaGopal</a>
                                                                   </div>
-                                                                  <div className="text-gray-500">10/10/2021</div>
+                                                                  <div className="text-gray-500">Startegic Advisor</div>
                                                                   <div>
                                                                         <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
                                                                   </div>
                                                               </div>
-                                                              <div>desc</div>
-                                                              <div>total</div>
+                                                              <div className="text-sm text-gray-700">
+                                                                desc
+                                                              </div>
+                                                              <div className="text-sm font-medium text-black">
+                                                                        sd
+                                                              </div>
                                                           </div>
                                                       </div>
                                                 </div>
