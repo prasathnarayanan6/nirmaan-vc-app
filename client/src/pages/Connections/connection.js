@@ -100,9 +100,15 @@ function Connections() {
                                                           <div className="bg-white p-4 rounded-lg shadow"> 
                                                               <div className="flex items-center space-x-2 test-sm">
                                                                   <div>
-                                                                      <a href="/.." className="text">soj</a>
+                                                                      <a href="/.." className="text-blue font-bold-500 hover:underline">Prabhu RajaGopal</a>
+                                                                  </div>
+                                                                  <div className="text-gray-500">10/10/2021</div>
+                                                                  <div>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
                                                                   </div>
                                                               </div>
+                                                              <div>desc</div>
+                                                              <div>total</div>
                                                           </div>
                                                       </div>
                                                 </div>
