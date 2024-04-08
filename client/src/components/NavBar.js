@@ -9,6 +9,9 @@ function NavBar() {
   const handleArrowHover = () => {
     setArrowHover(true);
   }
+  const handleArrowLeave = () => {
+    setArrowHover(false)
+  }
   const handleMouseEnter = () => {
     setProfileHover(true);
   }
@@ -51,8 +54,16 @@ function NavBar() {
               <div className="hidden w-full md:block md:w-auto lg:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                     <a href="/Home"   className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;">
+                     <a href="/Home" onMouseEnter={handleArrowHover} onMouseLeave={handleArrowLeave}  className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;">
                         <FaArrowAltCircleDown/> <span class="sr-only">Scroll</span>
+                        {arrowHover && (
+                          <div className="absolute top-[33px;] right-[220px;] mt-2 w-30 bg-slate-100 border border-gray-200 rounded-lg shadow-md items-center">
+                              <a href="/Home?data=teams" className="block py-1 px-6 text-gray-700 hover:bg-gray-400 text-sm hover:text-green-700 hover:rounded-lg">Teams</a>
+                              <a href="/Home?data=startups" className="block py-1 px-6 text-gray-700 hover:bg-gray-400 text-sm hover:text-green-700 hover:rounded-lg">Startups</a>
+                              <a href="/Home?data=mentors" className="block py-1 px-6 text-gray-700 hover:bg-gray-400 text-sm hover:text-green-700 hover:rounded-lg">Mentors</a>
+                              <a href="/Home?data=funding" className="block py-1 px-6 text-gray-700 hover:bg-gray-400 text-sm hover:text-green-700 hover:rounded-lg">Funding</a>
+                          </div>
+                      )}
                      </a>
                   </li>
                   <li>
