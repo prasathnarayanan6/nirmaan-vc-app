@@ -4,14 +4,14 @@ import { FaBars, FaBook, FaCalendar, FaChalkboardTeacher, FaFilePdf, FaGraduatio
 function SideBar() {
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-800 text-dark shadow-lg">
-      <SideBarLink href="/">
-        <SideBarIcon icon={<FaBars size="16" />} tooltipText="Bars" />
+      <SideBarLink href="/Home">
+        <SideBarIcon icon={<FaBars size="16" />} tooltipText="Menu" />
       </SideBarLink>
       <SideBarIcon icon={<FaHome size="16" />} tooltipText="Home" />
-      <SideBarIcon icon={<FaGraduationCap size="16" />} tooltipText="Graduation" />
-      <SideBarIcon icon={<FaChalkboardTeacher size="16" />} tooltipText="Teacher" />
-      <SideBarIcon icon={<FaBook size="16" />} tooltipText="Book" />
-      <SideBarIcon icon={<FaCalendar size="16" />} tooltipText="Calendar" />
+      <SideBarIcon icon={<FaGraduationCap size="16" />} tooltipText="Startups" />
+      <SideBarIcon icon={<FaChalkboardTeacher size="16" />} tooltipText="Mentor" />
+      <SideBarIcon icon={<FaBook size="16" />} tooltipText="Mentorship" />
+      <SideBarIcon icon={<FaCalendar size="16" />} tooltipText="Events" />
       <SideBarLink href="/connections">
         <SideBarIcon icon={<FaPeopleArrows size="16" />} tooltipText="Connections" />
       </SideBarLink>

@@ -97,7 +97,7 @@ function Connections() {
                                                       </table>
                                                       </div>
                                                       <div className=".grid grid-cols-1 gap-4 md:hidden">
-                                                          <div className="bg-white space-y-4 p-4 rounded-lg shadow"> 
+                                                          <div className="bg-white space-y-4 p-4 rounded-lg shadow-lg"> 
                                                               <div className="flex items-center space-x-2 test-sm">
                                                                   <div>
                                                                       <a href="/.." className="text-blue font-bold-500 hover:underline">Prabhu RajaGopal</a>
@@ -108,10 +108,10 @@ function Connections() {
                                                                   </div>
                                                               </div>
                                                               <div className="text-sm text-gray-700">
-                                                                desc
+                                                                    12346778
                                                               </div>
                                                               <div className="text-sm font-medium text-black">
-                                                                        sd
+                                                                    23454564
                                                               </div>
                                                           </div>
                                                       </div>
