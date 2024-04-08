@@ -3,6 +3,7 @@ import Home from './pages/Home/home';
 import Login from './pages/Login';
 import Connections from './pages/Connections/connection';
 import AddConnection from './pages/Connections/addConnection';
+import Forms from './components/Forms';
 // import Todo from '../src/__test__/todo'
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="/profile" element={<Connections/>} />
           <Route path="/settings" element={<Connections/>} />
           <Route path="/signout" element={<Connections/>} />
-          <Route path="/addconnections" element={<AddConnection />} />
+          <Route path="/addconnections" element={<Forms />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,10 +1,14 @@
 import React, {useState} from 'react'
 import img from '../assets/images/nirmaan-iitm.14fdf833.svg'
-import {FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
+import {FaArrowAltCircleDown, FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
 function NavBar() {
   const [isBellHovered, setIsBellHovered] = useState(false);
   const [profileHover, setProfileHover] = useState(false);
   const [rocketHover, setRocketHover] = useState(false);
+  const [arrowHover, setArrowHover] = useState(false);
+  const handleArrowHover = () => {
+    setArrowHover(true);
+  }
   const handleMouseEnter = () => {
     setProfileHover(true);
   }
@@ -47,7 +51,12 @@ function NavBar() {
               <div className="hidden w-full md:block md:w-auto lg:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                     <a href="/data"   className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" onMouseEnter={handleBellHover} onMouseLeave={handleBellHover}>
+                     <a href="/Home"   className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;">
+                        <FaArrowAltCircleDown/> <span class="sr-only">Scroll</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/Home"   className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" onMouseEnter={handleBellHover} onMouseLeave={handleBellHover}>
                         <FaRegBell style={styles} /> <span class="sr-only">Notifications</span>
                         <div class="absolute inline-flex items-center justify-center w-3 h-3 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full top-3 end-[188px;] dark:border-gray-900"><span className="text-xs"></span></div>
                      </a>
