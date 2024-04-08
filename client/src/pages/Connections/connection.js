@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import SideBar from '../../components/sidebar';
 import NavBar from '../../components/NavBar';
 import { FaUserTag } from "react-icons/fa";
@@ -58,38 +58,38 @@ function Connections() {
                                                                       <a href="/">+1234567</a>
                                                                   </td>
                                                               </tr>
-                                                              <tr className="hover:bg-gray-200">
+                                                              <tr className="bg-white">
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                      <a href="/"  className="font-bold text-value-500 hover:underline">Prof. Prabhu Rajagopal</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                      <a href="/">+12344566</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-gray-300 rounded-lg bg-opacity-60">PLENOME</span>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                      <a href="/">Strategic Advisor</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                      <a href="/">+1234567</a>
                                                                   </td>
                                                               </tr>
                                                               <tr className="bg-white">
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                      <a href="/"  className="font-bold text-value-500 hover:underline">Prof. Prabhu Rajagopal</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
-                                                                  </td> 
-                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-300 rounded-lg bg-opacity-60">PLENOME</span>
+                                                                      <a href="/">+12344566</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"> 100</a>
+                                                                      <a href="/">Strategic Advisor</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                                                      <a href="/">+1234567</a>
                                                                   </td>
                                                               </tr>
                                                           </tbody>
