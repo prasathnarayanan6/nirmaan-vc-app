@@ -8,14 +8,24 @@ function SideBar() {
         <SideBarIcon icon={<FaBars size="16" />} tooltipText="Menu" />
       </SideBarLink>
       <SideBarIcon icon={<FaHome size="16" />} tooltipText="Home" />
-      <SideBarIcon icon={<FaGraduationCap size="16" />} tooltipText="Startups" />
-      <SideBarIcon icon={<FaChalkboardTeacher size="16" />} tooltipText="Mentor" />
-      <SideBarIcon icon={<FaBook size="16" />} tooltipText="Mentorship" />
-      <SideBarIcon icon={<FaCalendar size="16" />} tooltipText="Events" />
+      <SideBarLink href="/startups">
+          <SideBarIcon icon={<FaGraduationCap size="16" />} tooltipText="Startups" />
+      </SideBarLink>
+      <SideBarLink href="/mentor">
+          <SideBarIcon icon={<FaChalkboardTeacher size="16" />} tooltipText="Mentor" />
+      </SideBarLink>
+      <SideBarLink href="/mentorship">
+          <SideBarIcon icon={<FaBook size="16" />} tooltipText="Mentorship" />
+      </SideBarLink>
+      <SideBarLink href="/events">
+              <SideBarIcon icon={<FaCalendar size="16" />} tooltipText="Events" />
+      </SideBarLink>  
       <SideBarLink href="/connections">
         <SideBarIcon icon={<FaPeopleArrows size="16" />} tooltipText="Connections" />
       </SideBarLink>
-      <SideBarIcon icon={<FaFilePdf size="16" />} tooltipText="Reports" />
+      <SideBarLink href="/reports">
+          <SideBarIcon icon={<FaFilePdf size="16" />} tooltipText="Reports" />
+      </SideBarLink>
     </div>
   );
 }
