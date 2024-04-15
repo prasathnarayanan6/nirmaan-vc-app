@@ -31,11 +31,12 @@ function Startups() {
                                                   <table className="w-full">
                                                           <thead className="bg-gray-25 border-b-2 border-gray-100">
                                                                   <tr>
-                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">STARTUP/ MENTOR</th>
-                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONTACT</th>
-                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">ORGANIZATION</th>
-                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONNECT FOR</th>
-                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">CONTACT</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">Name</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">Cohort</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">Sector</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">Mentor</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">Current Stage</th>
+                                                                      <th className="p-3 text-green-500 font-semibold tracking-wide text-left">Actions</th>
                                                                   </tr>
                                                           </thead>
                                                           <tbody className="divide-y divide-gray-100">
