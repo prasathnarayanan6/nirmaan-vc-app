@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import img from '../assets/images/nirmaan-iitm.14fdf833.svg'
-import {FaArrowAltCircleDown, FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
+import {FaArrowAltCircleDown, FaList, FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
 function NavBar() {
   const currentPath = window.location.pathname;
   const showArrowIcon = currentPath === '/Home';
@@ -77,7 +77,7 @@ function NavBar() {
                      </a>
                   </li>
                   <li>
-                     <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;"><FaQrcode /></a>
+                     <a href="/" className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;"><FaList /></a>
                   </li>
                   <li>
                      <a href="/" style={styless} onMouseEnter={rocketHandleHover} onMouseLeave={rocketHandleLeave} className="block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-500 md:p-1 dark:text-white md:dark:text-blue-500 text-xl hover:text-white hover:bg-green-400 rounded-3xl hover:rounded-2xl transition-all duration-200 ease-linear cursor-pointer group;" ><FaPaperPlane /></a>

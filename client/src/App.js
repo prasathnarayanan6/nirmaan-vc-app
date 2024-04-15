@@ -5,6 +5,7 @@ import Connections from './pages/Connections/connection';
 import AddConnection from './pages/Connections/addConnection';
 import Forms from './components/Forms';
 import Startups from './pages/startups/Startups';
+import Mentors from './pages/Mentors/Mentor';
 // import Todo from '../src/__test__/todo'
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/signout" element={<Connections/>} />
           <Route path="/addconnections" element={<Forms />} />
           <Route path="/startups" element={<Startups />} />
+          <Route path="/mentors" element={<Mentors />} />
         </Routes>
       </BrowserRouter>
     </div>
