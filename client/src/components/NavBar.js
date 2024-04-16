@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import img from '../assets/images/nirmaan-iitm.14fdf833.svg'
-import {FaArrowAltCircleDown, FaList, FaPaperPlane, FaQrcode, FaRegBell, FaUserCircle } from 'react-icons/fa';
+import {FaArrowAltCircleDown, FaList, FaPaperPlane, FaRegBell, FaUserCircle } from 'react-icons/fa';
 function NavBar() {
   const currentPath = window.location.pathname;
   const showArrowIcon = currentPath === '/Home';

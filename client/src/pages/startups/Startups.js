@@ -1,9 +1,9 @@
 import React from 'react'
 import SideBar from '../../components/sidebar';
 import NavBar from '../../components/NavBar';
-import { FaFileExcel, FaUserTag } from "react-icons/fa";
-import { IoMdPersonAdd } from "react-icons/io";
-import { GrConnect } from "react-icons/gr";
+import { FaEllipsisV, FaFileExcel, FaFilter} from "react-icons/fa";
+// import { IoMdPersonAdd } from "react-icons/io";
+// import { GrConnect } from "react-icons/gr";
 function Startups() {
   return (
     <div className="flex">
@@ -22,6 +22,7 @@ function Startups() {
                                                 <div className="rounded-sm ">
                                                       <div className="flex-row">
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-green-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white"><span>Add New Startup</span></button>
+                                                            <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-gray-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white ms-2"><span><FaFilter /></span></button>
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-violet-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white ms-2"><span><FaFileExcel /></span></button>
                                                             <input type="text" className="border border-blue-300 rounded-md bg-white-500 ms-4 md:h-[34px;] sm:w-[50%]" placeholder="Search Startups"></input>
                                                       </div>
@@ -42,23 +43,25 @@ function Startups() {
                                                           <tbody className="divide-y divide-gray-100">
                                                               <tr className="bg-white">
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/"  className="font-bold text-value-500 hover:underline">Prof. Prabhu Rajagopal</a>
+                                                                      <a href="/"  className="font-bold text-value-500 hover:underline">Seat of Joy</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/">+12344566</a>
+                                                                      <a href="/">Jan 2023</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">SOMFIN</span>
+                                                                        <span className="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-60">Automotive</span>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/">Strategic Advisor</a>
+                                                                      <a href="/">Not associated</a>
                                                                   </td>
                                                                   <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                                                                      <a href="/">+1234567</a>
+                                                                      <a href="/">Problem  Identification</a>
+                                                                  </td>
+                                                                  <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                                                      <a href="/"><FaEllipsisV /></a>
                                                                   </td>
                                                               </tr>
                                                           </tbody>
-
                                                       </table>
                                                       </div>
                                                       <div className=".grid grid-cols-1 gap-4 md:hidden">
