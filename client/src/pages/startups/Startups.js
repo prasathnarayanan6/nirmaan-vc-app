@@ -21,7 +21,7 @@ function Startups() {
                                           <div className="p-3 flex flex-col">
                                                 <div className="rounded-sm ">
                                                       <div className="flex-row">
-                                                            <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-green-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white"><span>Add New Startup</span></button>
+                                                            <button type="button" onClick={() => window.location.href= "http://localhost:3000/startup/new"} className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-green-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white"><span>Add New Startup</span></button>
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-gray-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white ms-2"><span><FaFilter /></span></button>
                                                             <button type="button" className="active:scale-[.90] active:duration-70 hover:scale-[1.02] border border-green-300 rounded-md bg-violet-500 transition-all ease-in-out md:text-xs font-semibold p-2 text-white ms-2"><span><FaFileExcel /></span></button>
                                                             <input type="text" className="border border-blue-300 rounded-md bg-white-500 ms-4 md:h-[34px;] sm:w-[50%]" placeholder="Search Startups"></input>
