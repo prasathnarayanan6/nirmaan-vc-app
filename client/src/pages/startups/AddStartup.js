@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import SideBar from "../../components/sidebar";
 import NavBar from "../../components/NavBar";
 function AddStartup() {
-  const [tabOpen, setTabOpen] = useState(false);
-  const open = () => {
-    setTabOpen(!tabOpen);
-  };
+const [tabOpen, setTabOpen] = useState(false);
+const [formsOpen, setFormsOpen] = useState(false);
+const open = () => {
+  setTabOpen(!tabOpen);
+};
+const openit = () => {
+  setFormsOpen(!formsOpen);
+};
   return (
     <div className="flex">
       <section id="sidebar" className="w-[66px;]">
@@ -115,12 +119,13 @@ function AddStartup() {
             </div>
           </div>
         </div>
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                  fez
-        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <input type="text" id="fname" className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name of the startup" required />
+              <input type="text" id="fname" className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sector" required />
+              <input type="text" id="fname" className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Startup type" required />
+        </div>
       </section>
     </div>
   );
 }
-
 export default AddStartup;
