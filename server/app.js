@@ -7,5 +7,5 @@ app.use(bodyParser.json());
 app.listen('3001', (req, res)=> {
     console.log('Hello');
 })
-app.use('/api/v1/a', LoginController);
-app.use('/api/v1/b', UserRegister);
+app.use('/api/v1/login/', LoginController);
+app.use('/api/v1/registration', UserRegister);
