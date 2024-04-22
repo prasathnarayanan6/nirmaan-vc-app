@@ -7,7 +7,7 @@ const [formsOpen, setFormsOpen] = useState(false);
 const open = () => {
   setTabOpen(!tabOpen);
 };
-const openit = () => {
+const OpenIt = () => {
   setFormsOpen(!formsOpen);
 };
   return (
@@ -59,15 +59,16 @@ const openit = () => {
                   tabIndex="-1"
                 >
                   <div className="py-1" role="none">
-                    <a
-                      href=".."
+                    <button
+                     
                       className="text-gray-700 block px-4 py-2 text-sm"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
+                      onClick={() => OpenIt()}
                     >
                       Nirmaan
-                    </a>
+                    </button>
                     <a
                       href=".."
                       className="text-gray-700 block px-4 py-2 text-sm"
@@ -119,11 +120,32 @@ const openit = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              <input type="text" id="fname" className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name of the startup" required />
-              <input type="text" id="fname" className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sector" required />
-              <input type="text" id="fname" className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Startup type" required />
+        {formsOpen && (
+        <div 
+        className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
+              <input 
+                  type="text" 
+                  className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                  placeholder="Name of the startup" 
+                  required />
+              <input 
+                  type="text" 
+                  className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                  placeholder="Sector" 
+                  required />
+              <input 
+                  type="text" 
+                  className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                  placeholder="Startup type" 
+                  required />
+              <input 
+              type="text" 
+              className="ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+              placeholder="Startup type" 
+              required />
         </div>
+       )}
       </section>
     </div>
   );
