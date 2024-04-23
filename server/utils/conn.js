@@ -1,18 +1,14 @@
-const mongodb = require('mongodb');
-const mongoose = require('mongoose');
-const connectDB = async () => {
-    try 
-    {
-      const conn = await mongoose.connect(`mongodb://localhost:27017/vc-nirmaan`, {
-        useNewUrlParser: true,
-      });
-      console.log(`MongoDB Connected: {conn.connection.host}`);
-    } 
-    catch (error) 
-    {
-      console.error(error.message);
-      process.exit(1);
-    }
-}
-  module.exports = connectDB;
-
+const {Client} = require('pg');
+const dotenv = require('dotenv');
+dotenv.config();
+const client = new Client({
+  host: "localhost",
+  user: "postgres",
+  port: "3306",
+  password: "1234",
+  database: "traktor"
+})
+client.connect(function(err) {
+  if(err) throw err;
+});
+module.exports = client;
