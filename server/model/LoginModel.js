@@ -27,7 +27,7 @@ const LoginModel = (user_mail, user_password) => {
                 }
                 else
                 {
-                    resolve({authenticated: "Invalid Username or Password"});
+                    resolve({authenticated: "Invalid Username"});
                 }
             }
         })
