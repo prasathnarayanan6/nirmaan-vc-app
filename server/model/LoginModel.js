@@ -12,11 +12,11 @@ const LoginModel = (user_mail, user_password) => {
             {
                 if(result.rows.length > 0)
                 {
-                    resolve({ authenticated: true, user: result.rows[0]});
+                    resolve({ authenticated: "Login Success!"});
                 }
                 else
                 {
-                    resolve({authenticated: false});
+                    resolve({authenticated: "Invalid Username or Password"});
                 }
                 resolve({result});
             }

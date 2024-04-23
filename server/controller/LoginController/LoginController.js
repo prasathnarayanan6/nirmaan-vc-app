@@ -16,7 +16,7 @@ const LoginController = async (req, res) => {
     }
     else 
     {
-		res.send('Please enter Username and Password!');
+		res.status(200).json({authentication: 'Please enter username and password properly!'})
 	}
 }
 module.exports = LoginController;
