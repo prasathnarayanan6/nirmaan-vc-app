@@ -14,7 +14,15 @@ const LoginModel = (user_mail, user_password) => {
                 {
                     if(result.rows[0].user_role === 2)
                     {
-                        console.log("admin")
+                        resolve({authenticationLevel: "Admin"});
+                    }
+                    else if(result.rows[0].user_role === 1)
+                    {
+                        resolve({authenticationLevel: "Finance"});
+                    }
+                    else 
+                    {
+                        resolve({authenticationLevel: "User"});
                     }
                 }
                 else
