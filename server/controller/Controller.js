@@ -14,18 +14,11 @@ const UserRegister = async(req, res) => {
     try
     {
            const {user_id, user_name, user_designation, user_password, user_created_date } = req.body
-           if(isEmpty(req.body.user_id))
+           if(isEmpty(req.body.user_id) || isEmpty(req.body.user_name) || isEmpty(req.body.user_designation) || isEmpty(req.body.user_password) || isEmpty(req.body.user_created_date) )
            {
                 res.json({Status: 'Data is missing'});
            }
-           else if(isEmpty(req.body.user_name))
-           {
-                res.json({Status: 'Data is missing'});
-           }        
-           else
-           {
-                res.json({Status: 'Register working', Date: res_date_time, user_id: user_id, user_name: user_name});
-           }
+           res.json({Status: 'Register working', Date: res_date_time, user_id: user_id, user_name: user_name});
     }
     catch (err)
     {
