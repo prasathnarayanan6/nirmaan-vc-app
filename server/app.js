@@ -6,4 +6,4 @@ app.use(bodyParser.json());
 app.listen('3001', (req, res)=> {
     console.log('Hello');
 })
-app.use('/api/v1', LoginController);
+app.use('/api/v1/', LoginController);
