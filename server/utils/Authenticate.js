@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const dotenv = require('dotenv');
 const Authenticate = (req, res, next) => {
     const token = req.header('Authorization');
     console.log("Unextracted Token: "+ token);

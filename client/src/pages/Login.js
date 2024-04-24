@@ -1,17 +1,54 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "@fontsource/open-sans";
 import '@fontsource/josefin-sans';
 import image from '../assets/images/nirmaan-iitm.14fdf833.svg';
-function Login() {    
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+function Login() {  
+    const navigate = useNavigate();
+    const [error, setError] = useState('')
+    const [formData, setFormData] = useState({
+        user_mail: '',
+        user_password: ''
+    })  
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setFormData((prevData)=>({
+            ...prevData,
+            [name]: value,
+        }))
+    }
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        try
+        {
+            const response = await axios.post('http://localhost:3001/api/v1/login', formData);
+            const {token} = response.data;
+            console.log("Login Token is:" + token);
+            localStorage.setItem('token', token);
+            setError('')
+            //navigate('/Home')
+        }
+        catch(error)
+        {
+            console.log("Login Failed" + error);
+            setError(error.response.data.message);
+            setTimeout(()=>{
+                setError('');
+            },3000);
+        }
+    }
     return(
             <div className="flex w-full h-screen">
                 <div className="w-full flex items-center justify-center lg:w-1/2">
                     <div className="bg-white px-10 py-20 rounded-xl border-2 border-green-400">
+                    {error && <p>error</p>}
+                    <form onSubmit={handleSubmit}>
                     <h1 className="text-2xl font-semibold text-gray-600">LOG IN</h1>
                             <div className="mt-8">
                                 <div>
                                     <label className="text-lg font-medium text-green-600">Email<span className="text-red-500">*</span></label>
-                                    <input 
+                                    <input name="username" value={formData.username} onChange={handleChange}
                                         className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent hover:border-green-300"
                                         placeholder="username@example.com"
                                         type="email"
@@ -19,7 +56,7 @@ function Login() {
                                 </div>
                                 <div>
                                     <label className="text-lg font-medium text-green-600">Password<span className="text-red-500">*</span></label>
-                                    <input 
+                                    <input name="passsword" value={formData.password} onChange={handleChange}
                                         className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent hover:border-green-300"
                                         placeholder="Password"
                                         type="password"
@@ -33,7 +70,7 @@ function Login() {
                                     {/* <button>Sign in with Google</button> */}
                                 </div>
                             </div>
-
+                            </form>
                     </div>
                 </div>
                 <div className="hidden relative lg:flex flex-col items-center w-1/2 justify-center h-full bg-green-600">
