@@ -23,9 +23,9 @@ function Login() {
         try
         {
             const response = await axios.post('http://localhost:3001/api/v1/login', formData);
-            console.log(response);
+            // console.log(response);
             const accessToken = response.data.result.accessToken;
-            console.log("Login Token is:" + accessToken);
+            // console.log("Login Token is:" + accessToken);
             localStorage.setItem('token', accessToken);
             setError('')
             navigate('/Home')
