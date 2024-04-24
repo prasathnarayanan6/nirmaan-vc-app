@@ -6,14 +6,13 @@ const LoginController = async (req, res) => {
     {
         try
         {
-           
             const result = await LoginModel(user_mail, user_password);
             res.status(200).json({result });
         }
         catch (err)
         {
             console.log(err);
-            res.status(200).json({error: 'Internal Server Error'});
+            res.status(404).json({error: 'Internal Server Error'});
         }
     }
     else 

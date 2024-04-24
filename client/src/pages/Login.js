@@ -23,11 +23,12 @@ function Login() {
         try
         {
             const response = await axios.post('http://localhost:3001/api/v1/login', formData);
-            const {token} = response.data;
-            console.log("Login Token is:" + token);
-            localStorage.setItem('token', token);
+            console.log(response);
+            const accessToken = response.data.result.accessToken;
+            console.log("Login Token is:" + accessToken);
+            localStorage.setItem('token', accessToken);
             setError('')
-            //navigate('/Home')
+            navigate('/Home')
         }
         catch(error)
         {
@@ -48,7 +49,7 @@ function Login() {
                             <div className="mt-8">
                                 <div>
                                     <label className="text-lg font-medium text-green-600">Email<span className="text-red-500">*</span></label>
-                                    <input name="username" value={formData.username} onChange={handleChange}
+                                    <input name="user_mail" value={formData.user_mail} onChange={handleChange}
                                         className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent hover:border-green-300"
                                         placeholder="username@example.com"
                                         type="email"
@@ -56,7 +57,7 @@ function Login() {
                                 </div>
                                 <div>
                                     <label className="text-lg font-medium text-green-600">Password<span className="text-red-500">*</span></label>
-                                    <input name="passsword" value={formData.password} onChange={handleChange}
+                                    <input name="user_password" value={formData.user_password} onChange={handleChange}
                                         className="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent hover:border-green-300"
                                         placeholder="Password"
                                         type="password"
