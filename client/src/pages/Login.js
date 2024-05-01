@@ -4,9 +4,12 @@ import '@fontsource/josefin-sans';
 import image from '../assets/images/nirmaan-iitm.14fdf833.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import alertify from 'alertifyjs';
+import 'alertifyjs/build/css/alertify.css';
 function Login() {  
     const navigate = useNavigate();
     const [error, setError] = useState('')
+    const [viewPass, setViewPass] = useState(''); 
     const [formData, setFormData] = useState({
         user_mail: '',
         user_password: ''
@@ -24,19 +27,38 @@ function Login() {
         {
             const response = await axios.post('http://localhost:3001/api/v1/login', formData);
             // console.log(response);
-            const accessToken = response.data.result.accessToken;
-            // console.log("Login Token is:" + accessToken);
-            localStorage.setItem('token', accessToken);
-            setError('')
-            navigate('/Home')
+            console.log(formData);
+            if(!formData)
+            {
+                alertify.error('All fields are required to login');
+            }
+            else
+            {
+                const accessToken = response.data.result.accessToken;
+                localStorage.setItem('token', accessToken);
+                setError('')
+                if(response.data.result.status === 'Login Authenticated' && accessToken)
+                {
+                    alertify.success('Login Successful');
+                    navigate('/Home');
+                }
+                else if(response.data.result.status === 'User_not_found')
+                {
+                    alertify.error('User not found');
+                }
+                else if(response.data.authentication === 'Please enter username and password properly!')
+                {
+                    alertify.error("Unknown Error");
+                }
+            }
         }
         catch(error)
         {
             console.log("Login Failed" + error);
-            setError(error.response.data.message);
-            setTimeout(()=>{
-                setError('');
-            },3000);
+            // setError(error.response.data.message);
+            // setTimeout(()=>{
+            //     setError('');
+            // }, 3000);
         }
     }
     return(
@@ -77,7 +99,7 @@ function Login() {
                 <div className="hidden relative lg:flex flex-col items-center w-1/2 justify-center h-full bg-green-600">
                         <img src={image} alt={image} className="mb-4" width="30%"/>
                         <div className="text-4xl font-bold mb-4">TRA<span className="text-white">KTOR</span></div>
-                        <div className="w-full flex justify-center font-semibold">Developed by IT Team, OIE - IIT Madras</div>
+                        <div className="w-full flex justify-center font-semibold text-white">STARTUP MANAGEMENT PORTAL</div>
                 </div>
             </div>
     );

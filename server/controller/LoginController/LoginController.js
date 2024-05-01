@@ -11,13 +11,13 @@ const LoginController = async (req, res) => {
         }
         catch (err)
         {
-            console.log(err);
-            res.status(404).json({error: 'Internal Server Error'});
+            
+            res.status(404).json({error: 'Internal Server Error', err: err});
         }
     }
     else 
     {
-		res.status(400).json({authentication: 'Please enter username and password properly!'})
+		res.status(200).json({authentication: 'Please enter username and password properly!'})
 	}
 }
 

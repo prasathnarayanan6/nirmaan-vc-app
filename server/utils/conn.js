@@ -6,9 +6,12 @@ const client = new Client({
   user: "postgres",
   port: "3306",
   password: "1234",
-  database: "traktor"
+  database: "postgres"
 })
 client.connect(function(err) {
   if(err) throw err;
+  else{
+    console.log("connected");
+  } 
 });
 module.exports = client;

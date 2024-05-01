@@ -5,6 +5,8 @@
   "dependencies": {
     "@fontsource/josefin-sans": "^5.0.19",
     "@fontsource/open-sans": "^5.0.27",
+    "alertifyjs": "^1.13.1",
+    "axios": "^1.6.8",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.5",
     "google-fonts": "^1.0.0",

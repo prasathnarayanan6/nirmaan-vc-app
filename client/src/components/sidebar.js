@@ -11,7 +11,7 @@ function SideBar() {
       <SideBarLink href="/startups">
           <SideBarIcon icon={<FaGraduationCap size="16" />} tooltipText="Startups" />
       </SideBarLink>
-      <SideBarLink href="/mentor">
+      <SideBarLink href="/mentors">
           <SideBarIcon icon={<FaChalkboardTeacher size="16" />} tooltipText="Mentor" />
       </SideBarLink>
       <SideBarLink href="/mentorship">
