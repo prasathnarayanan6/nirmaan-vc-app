@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useForm } from "react";
 import SideBar from "../../components/sidebar";
 import NavBar from "../../components/NavBar";
 function AddStartup() {
 const [tabOpen, setTabOpen] = useState(false);
 const [formsOpen, setFormsOpen] = useState(false);
+const[state, setstate] = useState({
+    email: "",
+    passsword: ""
+});
+const handleInputChange = (event) => {
+  const {name, value} = event.target;
+  setstate((prevProps) => ({
+    ...prevProps,
+    [name]: value
+  }))
+}
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  console.log(state);
+}
 const open = () => {
   setTabOpen(!tabOpen);
 };
